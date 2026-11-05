@@ -185,20 +185,94 @@
     <hr color="afafcc"><!-- Cor Hexadecimal -->
     <hr color=#0ff000><!-- Cor Hexadecimal -->
 
-    <img src="NewTux.png" width="50" alt="Pinguin"><!--Imagem-->
-    <img src="NewTux.png" height="200" alt="Pinguin"><!--Imagem menor-->
-    <img src="NewTux.png" width="50" alt="Pinguin" border="3"><!--Imagem com borda-->
-    <img src="NewTux.png" width="50" alt="Pinguin" vspace="100"><!--Imagem com espaço vertical-->
-    <img src="NewTux.png" width="50" alt="Pinguin" hspace="100"><!--Imagem com espaço horizontal-->
-    <img src="NewTux.png" width="50" alt="Pinguin" align="top"><!--Imagem com alinhamento superior-->
-    <img src="NewTux.png" width="50" alt="Pinguin" align="botton"><!--Imagem com alinhamento inferior-->
-    <img src="NewTux.png" width="50" alt="Pinguin" align="left"
+    <img src="imagens/NewTux.png" width="50" alt="Pinguin"><!--Imagem-->
+    <img src="imagens/NewTux.png" height="200" alt="Pinguin"><!--Imagem menor-->
+    <img src="imagens/NewTux.png" width="50" alt="Pinguin" border="3"><!--Imagem com borda-->
+    <img src="imagens/NewTux.png" width="50" alt="Pinguin" vspace="100"><!--Imagem com espaço vertical-->
+    <img src="imagens/NewTux.png" width="50" alt="Pinguin" hspace="100"><!--Imagem com espaço horizontal-->
+    <img src="imagens/NewTux.png" width="50" alt="Pinguin" align="top"><!--Imagem com alinhamento superior-->
+    <img src="imagens/NewTux.png" width="50" alt="Pinguin" align="botton"><!--Imagem com alinhamento inferior-->
+    <img src="imagens/NewTux.png" width="50" alt="Pinguin" align="left"
         border="5"><!--Imagem com alinhamento à esquerda e borda-->
-    <img src="NewTux.png" width="30" alt="Pinguin" align="right"
+    <img src="imagens/NewTux.png" width="30" alt="Pinguin" align="right"
         border="1"><!--Imagem com alinhamento à direita e menor-->
 
+    <br><img src="imagens/Gif-astronauta-arco-iris.gif" width=100% alt="Astronauta"><!--Gif-->
 
-    <br><img src="Gif-astronauta-arco-iris.gif" width=100% alt="Astronauta"><!--Gif-->
+    <br>
+    <video
+    controls
+    autoplay
+    muted
+    width="200"
+    height="200">
+    <!-- <video> video
+    controls    habilita os controles
+    autoplay    auto inicio
+    muted       iniciar mutado
+    width="10"  tamanho (pode ser em % da tela)
+    height="10" tamanho (pode ser em % da tela)
+    </video> -->
+    <source src="imagens/Video/Unreal-Planet-Nature-Relaxation-Film-with-Calm-Music.mp4" type="video/mp4"> pode ser .ogg ou .mov
+    Video não carregado <!--Mensagem para se der erro-->
+    </video>
+
+    <br>
+    <iframe src="abnt.html" 
+    frameborder="1"
+    title="ATIVIDADE ABNT"
+    width="500"
+    height="500">
+    <!--<iframe> Arquivo
+    src=""          URL ou caminho do arquivo
+    frameborder=""  Borda
+    title=""        Titulo
+    width=""        Tamanho (pode ser em % da tela)
+    height=""       Tamanho (pode ser em % da tela)
+    -->
+    </iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60401.59414946246!2d-48.31058612089843!3d-18.88266059999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a445d5bfa5db3b%3A0x8b423b684ced9100!2sCentro%20de%20Forma%C3%A7%C3%A3o%20Profissional%20Dr.%20Celso%20Charuri%20-%20SENAI%20Uberl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1793831179844!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    <form action="EXEMPLO.html" method="get">
+    <!--<form> formulário
+    action="" URL que ira processar os dados
+    method="" Metodo de troca de dados pode ser:
+        GET dentro da URL
+        POST fora da URL
+    -->
+        <p>Usuário</p>
+        <input name="user" type="text">
+        <!--<input> valores de entrada
+        name="nome_var" nome da variável
+        value="" conteúdo da variável (pode ser text ou password)
+        checked booleano(pode ser checkbox ou radio)
+        size="25" quantidade de caracteres exibidos em campos text ou password
+        maxlength="50" comprimento maximo de caracteres nas variaveis text ou password
+        id="" identificação (tecla de atalho)
+        type="text" tipo da variavel (text/password/radio/checkebox/email/file/number/range/search/tel/time/submit/reset/url)
+        -->
+        <p>Senha</p><input name="pass" type="password">
+        <p>Email</p><input name="email" type="email">
+        <p>Contato</p><input name="tel" type="tel">
+        <p>Data Nascimento</p><input name="nasc" type="date">
+        <p>Documento</p><input name="doc" type="file">
+        <p>Quantidade</p><input name="tel" type="number">
+        <br><br>
+        <p><input type="radio">Quero receber ofertas por email</p>
+        <input type="submit" value="Entrar">
+        <input type="reset" value="Limpar">
+
+        <p><input id="li" type="checkbox"></p>
+        <label for="li">Li e aceito os termos</label>
+        <!--Label = aceita clique no texto do id de referencia-->
+        
+        <button></button><!--Botão clicável personalizável-->
+        <button type="button">TESTE</button><!--Botão clicável (Ação depende de outras funções)-->
+        <button type="submit">TESTE2</button><!--Botão clicável de enviar formulário-->
+        <button type="reset">TESTE3</button><!--Botão clicável de limpar formulário-->
+        
+    </form>
 
 </body>
 
